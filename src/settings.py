@@ -17,7 +17,7 @@ PROJECT_NAME: str = "PubTables-1M: Detection"
 PROJECT_NAME_FULL: str = (
     "PubTables-1M: Towards Comprehensive Table Extraction from Unstructured Documents (Detection)"
 )
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
@@ -26,7 +26,7 @@ LICENSE: License = License.CDLA_Permissive_2_0(
     source_url="https://huggingface.co/datasets/bsmock/pubtables-1m/blob/main/README.md"
 )
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Domain.OCR()]
-CATEGORY: Category = Category.General()
+CATEGORY: Category = Category.General(benchmark=True)
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
@@ -87,7 +87,9 @@ ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Microsoft, USA"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "microsoft.com"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
+    "__PRETEXT__": "Additionally, every table has information tags: ***pose***, ***truncted***, ***difficult***, and ***occluded***"
+}
 TAGS: Optional[List[str]] = None
 
 
