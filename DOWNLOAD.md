@@ -1,6 +1,6 @@
 Dataset **PubTables-1M: Detection** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/4urpxeqh928ppndiyyos9/pubtables1m-detection-DatasetNinja.tar?rlkey=zq6ojmcggojabqc4ljohpwzsh&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzMxNzJfUHViVGFibGVzLTFNOiBEZXRlY3Rpb24vcHVidGFibGVzMW0tZGV0ZWN0aW9uLURhdGFzZXROaW5qYS50YXIiLCAic2lnIjogInpRWUFDMzRtSjU5Z2F2VDBNdEhIV0YxeS96TTdSdmJkM2V0QlNnMGV4Wms9In0=)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
